@@ -1,0 +1,10 @@
+Nombre del dataset: Student Performance Factors Dataset
+Fuente: Kaggle
+Enlace de acceso: https://www.kaggle.com/datasets/mosapabdelghany/student-performance-factors-dataset
+Fecha de consulta: 14 de agosto de 2026
+Fecha de última actualización en Kaggle: 2025 (Cumple con el criterio de actualización no mayor a 3 años)
+Contexto del dataset: Representa un entorno educativo socioacadémico donde se capturan hábitos de estudio, soporte familiar, recursos escolares y datos demográficos de estudiantes.
+Significado de cada registro: Cada fila representa a un estudiante único y sus métricas asociadas durante un periodo académico.
+Variable objetivo ($y$): Exam_Score (continua, puntaje obtenido en el examen final).
+Tipo de problema de ML: Aprendizaje Supervisado — Regresión Lineal / No Lineal.
+Utilidad predictiva: Un modelo entrenado con estos datos permitirá a las instituciones educativas identificar de manera temprana a estudiantes en riesgo de bajo rendimiento e intervenir preventivamente mediante tutorías o asignación de recursos.
