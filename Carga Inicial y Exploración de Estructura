@@ -1,0 +1,31 @@
+import numpy as np
+import pandas as pd
+
+# Carga del dataset original
+df_raw = pd.read_csv("StudentPerformanceFactors.csv")
+
+# Inspección básica
+print(f"Filas: {df_raw.shape[0]}, Columnas: {df_raw.shape[1]}")
+print("\n--- Tipos de Datos y Nulos ---")
+print(df_raw.info())
+
+print("\n--- Conteo de Nulos y Valores Únicos ---")
+resumen_inicial = pd.DataFrame(
+    {
+        "Tipo_Dato": df_raw.dtypes,
+        "Valores_Faltantes": df_raw.isnull().sum(),
+        "Valores_Unicos": df_raw.nunique(),
+    }
+)
+print(resumen_inicial)
+
+print(f"\nRegistros Duplicados: {df_raw.duplicated().sum()}")
+print("\n--- Estadísticas Descriptivas ---")
+display(df_raw.describe(include="all").T)
+print("\n--- Muestra de Registros ---")
+display(df_raw.head())
+
+
+
+
+#Interpretación del estado inicial: El dataset cuenta con variables numéricas discretas/continuas y categóricas ordinales/nominales. Se observan valores faltantes en variables clave (como Teacher_Quality, Parental_Education_Level, Distance_from_Home), así como categorías en formato texto con inconsistencias de formato.
