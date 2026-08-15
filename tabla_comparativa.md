@@ -1,4 +1,4 @@
-# 10. Resumen Comparativo Estado Inicial vs. Final
+Resumen Comparativo Estado Inicial vs. Final
 
 | Elemento | Estado inicial | Estado final |
 |---|---|---|
