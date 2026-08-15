@@ -1,0 +1,8 @@
+Conclusión General
+Hallazgos y Limpieza: Se identificaron inconsistencias de formato, espacios vacíos y registros faltantes en variables categóricas, los cuales fueron corregidos mediante imputación por moda y estandarización de texto.
+
+Transformaciones: La aplicación de Ordinal Encoding para variables con orden explícito y One-Hot Encoding para binarias/nominales permitió digitalizar la información sin asumir jerarquías falsas. El uso de StandardScaler igualó la escala de las métricas de estudio y asistencia.
+
+Limitaciones del Dataset: El dataset carece de variables temporales o longitudinales (seguimiento del alumno a lo largo de múltiples semestres), limitándose a un corte transversal.
+
+Siguiente Paso Técnico: Dividir los datos procesados mediante train_test_split, garantizando que el ColumnTransformer se ajuste únicamente con los datos de train, para proceder con el entrenamiento de modelos de regresión (p. ej., LinearRegression, RandomForestRegressor o XGBoostRegressor).
